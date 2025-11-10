@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodesWithAlok - Professional Development Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+    ></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-logo">
+            <img src="./logo_without_bg.png" alt="CodesWithAlok Logo" class="logo-image" width="300px" height="300px">
+            <!-- <span class="logo-mark">C<i class="fas fa-code"></i>A</span> -->
+        </div>
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a> <a href="#skills">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="cta-button">Hire Me</a>
+        </nav>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <nav class="mobile-overlay-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a> <a href="#skills">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta-button-mobile">Hire Me</a>
+    </nav>
+
+    <section class="main-banner" id="home">
+        <div class="banner-content">
+            <div class="text-area">
+                <img src="./CodesWithAlok.png" alt="CodesWithAlok Logo" class="banner-image">
+                <h1 class="main-title">@CodesWithAlok</h1>
+                <h2 class="subtitle">Unlocking the Future of Development</h2>
+                <p class="description">**Modern, Scalable Web Solutions.** Expertise in Python, Machine Learning, and Enterprise Web Frameworks like Django.</p>
+                <a href="#contact" class="cta-banner">Start Your Project <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+        <div class="floating-icons">
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-brain" title="Neural Network"></i>
+            <i class="fas fa-cogs" title="Machine Learning"></i>
+            <i class="fas fa-bolt" title="Django"></i>
+        </div>
+    </section>
+
+    <main class="site-main">
+
+        <section id="about" class="content-section about-section">
+            <h3 class="section-heading">About CodesWithAlok</h3>
+            <div class="about-flex">
+                <div class="about-text">
+                    <p>I specialize in building **high-performance, secure, and scalable web applications** that drive business growth. With a deep foundation in **Python, Django, and modern Machine Learning techniques**, I transform complex ideas into elegant, functional digital solutions.</p>
+                    <p>My focus is on clean architecture, optimized code, and creating a fantastic user experience. Let's build something exceptional together, designed for the future of development.</p>
+                    <a href="#skills" class="about-link">View My Technical Stack <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item"><i class="fas fa-rocket"></i> <span>6.5+</span> Years Experience</div>
+                    <div class="stat-item"><i class="fas fa-project-diagram"></i> <span>20+</span> Projects Completed</div>
+                    <div class="stat-item"><i class="fas fa-check-circle"></i> <span>100%</span> Client Satisfaction</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="content-section">
+            <h3 class="section-heading">My Core Expertise</h3>
+            <p class="section-subtext">Cutting-edge technologies for reliable performance.</p>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Full-Stack Development</h4>
+                    <p>Building responsive, modern applications using Python and Django/Flask.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Data Science & ML</h4>
+                    <p>Implementing data analysis and machine learning models for predictions.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h4>Scalable Architecture</h4>
+                    <p>Designing robust, high-availability backends ready for enterprise load.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section projects-section">
+            <h3 class="section-heading">Featured Projects & Portfolio</h3>
+            <p class="section-subtext">A selection of my best work demonstrating skill and commitment.</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="" alt="Project 1" class="project-img">
+                    <h4>Django E-commerce Platform</h4>
+                    <p>A secure, scalable e-commerce solution with integrated payment gateways.</p>
+                    <a href="#" class="project-link">View Case Study</a>
+                </div>
+                <div class="project-card">
+                    <img src="" alt="Project 2" class="project-img">
+                    <h4>AI Recommendation Engine</h4>
+                    <p>Python/TensorFlow project delivering personalized user content recommendations.</p>
+                    <a href="#" class="project-link">View Live Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section projects-section">
+            <h3 class="section-heading">GitHub Contribiton Board</h3>
+            <p class="section-subtext">A selection of my best work demonstrating skill and commitment.</p>
+            <div class="project-grid">
+                <div class="calendar"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <h3 class="section-heading">Get in Touch</h3>
+            <div class="contact-grid">
+                <div class="contact-form-area">
+                    <h4>Start a conversation</h4>
+                    <form action="#" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Project Details or Message" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info-area">
+                    <h4>Contact Details & Location</h4>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><strong>Address:</strong> [Your City/Region], India</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><strong>Email:</strong> your.email@codeswithalok.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+                    </div>
+                    <div class="map-placeholder">
+                        [Map placeholder: Google Maps or other service]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-details">
+                <img src="./logo_without_bg.png" alt="CodesWithAlok Logo" class="logo-image" width="300px" height="300px">
+                <!-- <span class="logo-mark">C<i class="fas fa-code"></i>A</span> -->
+                <p class="footer-tagline">Building the next generation of web.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter/X"><i class="fab fa-square-x-twitter"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 CodesWithAlok. All rights reserved. | Built with ❤️ in Ghazipur | Designed By Amrit Softwares</p>
+    </footer>
+
+    <nav class="mobile-bottom-menu">
+        <a href="#home" class="active"><i class="fas fa-home"></i></a>
+        <a href="#about"><i class="fas fa-user-tie"></i></a> <a href="#projects"><i class="fas fa-project-diagram"></i></a>
+        <a href="#contact"><i class="fas fa-comment-dots"></i></a>
+    </nav>
+    <script>
+    // GitHubCalendar(".calendar", "alokkjnu");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "alokkjnu", { responsive: true });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
