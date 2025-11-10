@@ -37,3 +37,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+    // 1. List of subtext options
+    const subtextOptions = [
+        "Visualizing consistent coding habits and daily commitment to learning and development.",
+        "A daily log of my coding activity, reflecting continuous learning and sustained engagement.",
+        "Tracking my active development streak and growth across personal and collaborative projects.",
+        "See my dedication in real-time with consistent contributions to the developer community.",
+        "Proof of my continuous commitment to mastering new technologies."
+    ];
+
+    // Get the element to update
+    const subtextElement = document.getElementById('github-subtext');
+    let currentIndex = 0; // Start with the first option
+
+    // 2. Function to update the text
+    function rotateSubtext() {
+        // Update the text content
+        subtextElement.textContent = subtextOptions[currentIndex];
+        
+        // Move to the next index, or loop back to 0
+        currentIndex = (currentIndex + 1) % subtextOptions.length;
+    }
+
+    // Initialize with the first option immediately
+    rotateSubtext();
+
+    // 3. Run the function every 5 seconds (5000 milliseconds)
+    // You can adjust this duration
+    setInterval(rotateSubtext, 10000); 
